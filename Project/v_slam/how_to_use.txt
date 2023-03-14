@@ -1,0 +1,3 @@
+##Go inside build and run the following command
+
+./cam_slam -v ../orb_vocab.fbow -n 0 -c ../config/realsense-d455.yaml --no-sleep --map-db-out ../maps/test.msg 

@@ -1,0 +1,77 @@
+# KITTI monocular model for seq.00-02
+
+#==============#
+# Camera Model #
+#==============#
+
+Camera:
+  name: "oneplus-8t"
+  setup: "monocular"
+  model: "perspective"
+
+  #fx: 859.042969
+  #fy: 859.611694
+  #cx: 639.301880
+  #cy: 412.302124
+  fx: 1344.2734761952404
+  fy: 1337.129021802752
+  cx: 315.9141683983037
+  cy: 213.40937747149044
+
+  k1: 0.0
+  k2: 0.0
+  p1: 0.0
+  p2: 0.0
+  k3: 0.0
+
+  fps: 30.0
+  cols: 640
+  rows: 480
+
+  color_order: "RGB"
+
+#=====================#
+# Tracking Parameters #
+#=====================#
+
+Preprocessing:
+  min_size: 800
+
+#================#
+# ORB Parameters #
+#================#
+
+Feature:
+  max_num_keypoints: 1000
+  ini_max_num_keypoints: 2000
+  name: "default ORB feature extraction setting"
+  scale_factor: 1.2
+  num_levels: 8
+  ini_fast_threshold: 20
+  min_fast_threshold: 7
+
+#====================#
+# Mapping Parameters #
+#====================#
+
+Mapping:
+  baseline_dist_thr_ratio: 0.02
+  redundant_obs_ratio_thr: 0.9
+  num_covisibilities_for_landmark_generation: 20
+  num_covisibilities_for_landmark_fusion: 20
+
+#===========================#
+# PangolinViewer Parameters #
+#===========================#
+
+PangolinViewer:
+  keyframe_size: 0.06
+  keyframe_line_width: 1
+  graph_line_width: 1
+  point_size: 2
+  camera_size: 0.07
+  camera_line_width: 2
+  viewpoint_x: 0
+  viewpoint_y: -20
+  viewpoint_z: -0.1
+  viewpoint_f: 2800

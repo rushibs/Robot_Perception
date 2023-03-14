@@ -1,0 +1,8 @@
+mkdir build && cd build
+cmake \
+    -DUSE_PANGOLIN_VIEWER=ON \
+    -DINSTALL_PANGOLIN_VIEWER=ON \
+    -DBUILD_TESTS=ON \
+    ..
+make -j4
+make install
